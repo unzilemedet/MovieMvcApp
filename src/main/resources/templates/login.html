@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <link href="/login.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="mycontainer d-flex flex-column align-items-end justify-content-center">
+
+        <div class="loginform">
+            <h1 class=" font-weight-bolder display-4 text-center my-4">My Movie App</h1>
+            <form action="" class="d-flex flex-column" method="post" >
+                <div class="info ">
+                    <label class="form-label" for="email"> Email </label>
+                    <input class="form-control" th:value="${email}" id="email" name="email" placeholder="Lütfen email adresinizi giriniz"
+                           type="email">
+                </div>
+                <div class="info ">
+                    <label class="form-label" for="password"> Password </label>
+                    <input class="form-control" id="password" name="password" placeholder="Lütfen şifrenizi giriniz"
+                        type="password">
+                </div>
+                <div class="info mybuttons col-12 d-flex  justify-content-around">
+                    <button class="font-weight-bold   align-self-center btn btn-outline mt-3" type="submit"> Sign In</button>
+                    <a class="font-weight-bold  btn btn-outline  mt-3  align-self-center" href="/user/register">Sign Up</a>
+                </div>
+                <div th:if="${error!=null}" th:text="${error}"/>
+            </form>
+        </div>
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

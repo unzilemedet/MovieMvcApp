@@ -1,0 +1,122 @@
+.loginform {
+    margin-right: 25px;
+    width: 50vw;
+}
+
+.loginform form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 50px 8px;
+    width: 90%;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+label {
+    color: #794763;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+
+}
+
+h1 {
+    color: aliceblue;
+    font-family: "MS UI G" !important;
+}
+
+.info {
+    font-family: "MS UI G";
+    font-size: 30px;
+    margin: 20px;
+    width: 70%;
+    transition: 1s;
+
+
+}
+
+.info input {
+    border-radius: 10px;
+
+
+}
+
+.mybuttons {
+    gap: 10px;
+}
+
+.info button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: azure;
+    font-weight: 1000;
+
+
+}
+
+.info a {
+    padding: 5px 10px;
+    color: azure;
+    border-radius: 10px;
+    font-size: 20px;
+
+
+}
+
+.info a:hover {
+    transform: scale(1.15);
+    color: aliceblue;
+    background-color: cornflowerblue;
+    transition: 800ms;
+
+}
+
+.info button:hover {
+    transform: scale(1.15);
+    color: aliceblue;
+    background-color: #5C3E5A;
+    transition: 800ms;
+
+}
+
+.info a:active {
+    transform: translateY(2px);
+
+}
+
+.info button:active {
+    transform: translateY(2px);
+}
+
+.mycontainer {
+    background-image: url("/img/arkaplan1.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (max-width: 880px) {
+    .loginform {
+        width: 420px;
+        min-width: 50vw;
+        min-height: 50vh;
+    }
+
+    .loginform form {
+        margin-left: 50px;
+
+    }
+
+    .info {
+        width: 80%;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+
+}
